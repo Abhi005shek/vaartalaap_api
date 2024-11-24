@@ -1,0 +1,77 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Java virtual machine files
+*.class
+
+# Eclipse IDE settings
+/.settings/
+/.classpath
+/.project
+
+# IntelliJ IDEA
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Mac OS system files
+.AppleDouble
+.LSOverride
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Build output
+/dist/
+/build/
+/tmp/
+/out/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Yarn and npm lock files (optional, depends on your workflow)
+yarn.lock
+package-lock.json
+
+# Test coverage output
+coverage/
+
+# Compiled source #
+###################
+*.com
+*.dll
+*.exe
+*.obj
+*.so
+*.dylib
+
+# Archive files
+*.tar.gz
+*.zip
+*.tar.bz2
+*.tar.xz
+
+# IDE Files
+*.sublime-workspace
+*.sublime-project
