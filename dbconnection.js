@@ -8,6 +8,7 @@ async function dbconnection() {
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        serverSelectionTimeoutMS: 120000,
       }
     );
     console.log("Database Connected");
