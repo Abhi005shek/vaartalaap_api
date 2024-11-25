@@ -21,18 +21,13 @@ const app = express();
 app.use(express.json());
 
 app.use(
-  cors({
-    origin: [process.env.UI_URL, "http://localhost:5173"],
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
+  cors()
 );
 
 const server = createServer(app);
 const io = socketio(server, {
   cors: {
-    origin: [process.env.UI_URL, "http://localhost:5173"],
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
