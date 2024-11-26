@@ -4,7 +4,7 @@ require("dotenv").config();
 async function dbconnection() {
   try {
     await mongoose.connect(
-      "mongodb://127.0.0.1:27017/vaartalaap" || process.env.MONGO_URL,
+      process.env.MONGO_URL || "mongodb://localhost:27017/vaartalaap",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
